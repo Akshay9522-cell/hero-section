@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-}
+
 .hero{
     height: 100vh;
     background: url("/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg")no-repeat center center/cover;
@@ -24,6 +23,8 @@ nav{
     margin-top: 40px;
     background: rgba(0, 0, 0, 0.35);
     border-radius: 20px;
+    z-index: 1;
+    padding-inline: 25px;
 
 }
 .hero nav img{
@@ -278,10 +279,13 @@ span{
  }
 
  .menu .breakfast{
+    display: flex;
+    flex-direction: column;
+    gap: 0px   ;
     position: relative;
     left: 40px;
     top: 50px;
-    height: 550px;
+   height: 600px;
     width: 550px;
     border: 1px solid white;
      background-color: rgba(0, 0, 0, 0.65);
@@ -293,16 +297,18 @@ span{
 
  }
  .menu .coffee{
+    display: flex;
+    flex-direction: column;
+    gap: 14px   ;
     position: relative;
     left: 40px;
-    top: 50px;
-    height: 550px;
+    top: 45px;
+    height: 600px;
     width: 550px;
     border: 1px solid white;
      background-color: rgba(0, 0, 0, 0.65);
      border-radius: 30px;
-         color:white;
-
+     color:white;
  }
 
  .breakfast p{
@@ -314,6 +320,46 @@ span{
     margin-bottom: 5px;
  }
 
+ .menu .breakfast .first h4{
+    font-size: 20px;
+    font-weight: 900;
+ }
+ .menu .coffee .latte h4{
+     font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+   
+ }
+.menu .breakfast .first h5{
+    font-size: 20px;
+    font-weight: 900;
+    color: #BC6C25;
+ }
+ .menu .coffee .latte h5{
+     font-size: 20px;
+    font-weight: 900;
+    color: #BC6C25;
+ }
+ .menu .breakfast .second h6{
+position: relative;
+right: 30px;
+    color:white;
+    opacity: .3;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+     border-top: 1px solid white;
+    
+ }
+  .menu .coffee.second h6{
+    position: relative;
+     right: 30px;
+    color:white;
+    opacity: .3;
+    font-size: 17px;
+      border-top: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+ }
  .btn::after{
     content: "";
  }
@@ -322,3 +368,203 @@ span{
     height: 100vh;
     background-color: #7c5c52;
  }
+
+ .first{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin-top: 30px;
+ }
+.second{
+    position: relative; 
+    font-size: 20px;
+    margin-top: 7px;
+    padding-top: 10px;
+   
+}
+
+ .second1{
+    position: relative; 
+    font-size: 25px;
+    margin-top: px;
+    padding-top: 7px;
+    
+    opacity: .3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    border: 3px solid white;
+    background-color: #DDA15E;
+    border-radius: 30px;
+   
+    
+}
+.box .bg{
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.grid{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;   
+    gap: 50px;
+    margin-left: 100px;
+    width: 40px;
+    margin-top: 70px;
+
+    
+}
+.box h4{
+    position: relative;
+    bottom: 65px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    
+
+
+}
+.testi h5{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    top: 20px;
+}
+
+.testi h1{
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+
+}
+.box img{
+    position: relative;
+    bottom: 84px;
+    height: 100px;
+    width: 18.5rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+}
+.line{
+    position: relative;
+    bottom: 20px;
+    border-top: 1px solid #212529;
+    width: 250px;
+    margin-left: 20px;
+
+}
+.rating{
+    display: flex;
+    position: relative;
+    left: 20px;
+    color: white;
+    font-weight: 900;
+}
+.grid .box .grid2{
+    position: relative;
+    top: 50px;
+}
+
+.footer{
+    height: 100vh;
+    background: url(/mask.jpg)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120vh;
+}
+.ft{
+
+
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+    width: 79rem;   
+    margin-bottom: 50px;
+ 
+}
+.add{
+    position: relative;
+    top: 30px;
+}
+.contact{
+     position: relative;
+     top: 50px;
+}
+.day{
+    position: relative;
+    left: 30px;
+     top: 50px;
+}
+.day h1{
+    display: flex;
+}
+
+.icon{
+    position: relative;
+    top: 48px;
+    left: 30px;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+.latte{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form{
+    position: relative;
+    right: 20%;
+    font-size: 23px;
+    
+    
+}
+.form h1{
+    color: white;
+    font-size: 40px;
+}
+.form1{
+    position: relative;
+    right: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.place:hover{
+    background-color: #fd7701;
+    opacity: 200;
+}
+.hit{
+    position: relative;
+    left: 38%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #BC6C25;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}
+.hit:hover{
+    color: #BC6C25;
+    background-color: #FFFFFF;
+}
