@@ -3,11 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 .hero{
-    height: 100vh;
-    background: url("/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg")no-repeat center center/cover;
 
+    height: 100vh;
+    animation: dog 10s ease-in-out 0s infinite;
+}
+@keyframes dog {
+    0%{
+         background: url(/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg)no-repeat center center/cover;
+
+    }
+    25%{
+        background: url(/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg)no-repeat center center/cover;
+    }
+    50%{
+        background: url(/mask.jpg)no-repeat center center/cover;
+    }
+    75%{
+        background: url(/1440x960-barista.webp)no-repeat center center/cover;
+    }
+    100%{
+         background: url(/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg)no-repeat center center/cover;
+    }
+
+    
 }
 .hero nav{
     position: fixed;
@@ -81,10 +103,9 @@
     text-align: center;
      background-color:#532d02eb ;
      padding: 10px 16px;
-}
-.main{
-    color: white;
-}
+     
+    }
+
 .content p{
     margin-bottom: 30px;
     font-size: 30px;
@@ -512,29 +533,29 @@ right: 30px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 120vh;
+    height: 150vh;
 }
 .ft{
 
-
-    display: flex;
-    justify-content: space-around;
+     height: 100vh;
     color: #FFFFFF;
-    width: 79rem;   
-    margin-bottom: 50px;
+    width: 100%;
  
 }
 .add{
-    position: relative;
-    top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
+
 .add p{
-    position: relative;
     font-size: 25px;
 }
 .contact{
      position: relative;
      top: 40px;
+     
 }
 .contact p{
     position: relative;
@@ -557,11 +578,20 @@ right: 30px;
 
 .icon{
     position: relative;
-    top: 48px;
+    padding-top: 30px;
     left: 30px;
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    font-size: 25px;
+    font-size: 20px;
+}
+.icon h1{
+    font-size: 30px;
+    padding-top: 10px;
+
+}
+.icon p{
+
 }
 .latte{
     display: flex;
@@ -570,8 +600,10 @@ right: 30px;
 
 .form{
     position: relative;
+    top: 50px;
     right: 20%;
     font-size: 23px;
+
     
     
 }
@@ -616,6 +648,10 @@ right: 30px;
 
 /* media   queries */
 @media screen and (max-width:768px) {
+
+    .hero{
+        width: 100%;
+    }
     
     label{
         display: block;
@@ -626,6 +662,10 @@ right: 30px;
         color: #fd7701;
         
     }
+    .hero nav h1{
+        position: relative;
+        left: 40px;
+    }
 .hero nav ul {
     display: none;
 }
@@ -633,46 +673,50 @@ right: 30px;
     display: none;
  }
  .hero nav{
-
-    width: 40%;
+   position: fixed;
+   
  }
  .main{
     flex-direction: column;
+    width: 100%;
  }
  .main .mid img{
-    width: 100%;
+
+    margin-right: 90px;
  } 
+ .content p{
+    width: 600px;
+    margin-right: 60px;
+ }
  .cards{
     grid-template-columns: repeat(2,1fr);
+    width: 100%;
  }
  .menu{
     grid-template-columns: repeat(1,1fr);
+    width: 103%;
  }
  .menu .coffee{
     margin-bottom: 10%;
     margin-top: -15%;
-    margin-left: 10%;
+    margin-left: 0%;
  }
  .menu .breakfast{
-    margin-left: 10%;
+    margin-left: 0% ;
  }
  .grid{
     grid-template-columns: repeat(1,1fr);
+    
  }
  .grid .box{
-    width: 200%;
+    width: 150%;
+    
  }
  .testimonial{
-    height: 1000px;
+    height: 1100px;
  }
- .footer{
-    height: 900px;
- }
- .ft{
-    flex-direction: column;
-    margin-left: 120%;
-    gap: 40px;
- }
+ 
+ 
  .icon{
     margin-top: -2%;
     margin-left: -2%;
@@ -685,7 +729,7 @@ right: 30px;
     margin-left: -2%;
    }
    .footer{
-    height: 1000px;
+    height: 1300px;
    }
    .form{
     margin-left: 35%;
@@ -696,4 +740,45 @@ right: 30px;
    .hero nav h1{
     margin-left: -25%;
    }
+   .add{
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 30px;
+    gap: 20px;
+    
+   }
 } 
+
+
+/* 
+@media  screen and (max-width:320px) {
+    .hero nav{
+    width: 50%;
+    
+    }
+
+     .click{
+        margin-left: 90%   ;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 200px;
+     }
+    .carding{
+        width: 700px ;
+    }
+    .card{
+        width: 500px;
+        margin-left: -100px;
+    }
+    .menu{
+        width: 700px;
+    }
+    .testimonial{
+        width: 700px;
+    }
+   .footer{
+    width: 700px;
+   }
+
+} */
