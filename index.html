@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero section</title>
     <link rel="stylesheet" href="/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -39,7 +40,7 @@
            
        </header>  
 
-       <section class="main"    >
+       <section class="main"   data-aos="zoom-in-up"  >
 
        <div class="mid">
             <img src="/almoã-o.jpg" alt="">
@@ -55,9 +56,9 @@
         </div>
        </section>
 
-       <section class="carding" id="about ">
+       <section class="carding" id="about "  data-aos="flip-down">
         
-        <div class="heading">
+        <div class= "heading">
         <p>creative baristas</p>
         <h1>Meet People</h1>
         </div>
@@ -84,7 +85,7 @@
         </div>
        </section>
 
-       <section class="menu" id="ourmenu">
+       <section class="menu" id="ourmenu"  data-aos="flip-left">
         <div class="  breakfast">
             <p>Delicious Menu</p>
             <h1>Breakfast</h1>
@@ -179,7 +180,7 @@
         </div> 
        </section>
        
-       <section class="testimonial" id="reviews">
+       <section class="testimonial" id="reviews" data-aos="zoom-in-up">
         <div class="testi">
           
             <h5> Reviewed by Customer</h5>
@@ -229,7 +230,7 @@
 
         </div>
        </section>
-       <section class="footer" id="contact">
+       <section class="footer" id="contact" data-aos="zoom-in-left">
       <div class="form">
         <p>Say Hello</p>
         <h1>Contact</h1>
@@ -282,5 +283,10 @@
     </div>
 
        </section>
+
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

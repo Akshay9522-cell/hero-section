@@ -5,6 +5,8 @@
 }
 body{
     overflow-x: hidden;
+    width: 100%;
+
 }
 .hero{
 
@@ -650,3 +652,8 @@ right: 30px;
     display: none;
 }
 
+
+@media  screen and (max-widht:768px) {
+       
+    
+}
