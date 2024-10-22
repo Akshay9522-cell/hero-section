@@ -773,7 +773,9 @@ header nav label{
 
 @media screen and (max-width:426px) {
 
-
+  .main{
+    gap: 2px  ;
+  }
     header nav label{
         position: relative;
         right: 150px;
@@ -807,7 +809,7 @@ header nav label{
     }
   .hero nav ul{
     position: relative;
-    right: 100px;
+    right: 10   0px;
     
   }
      .hero nav  ul a{
@@ -857,7 +859,7 @@ header nav label{
         right:270px;
     }
     .form{
-        margin-left: 100px;
+        margin-left: 200px;
     }
     .form1{
         flex-direction: column;
