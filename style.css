@@ -807,7 +807,7 @@ header nav label{
     }
   .hero nav ul{
     position: relative;
-    right: 50px;
+    right: 100px;
     
   }
      .hero nav  ul a{
@@ -816,7 +816,7 @@ header nav label{
     }
     .hero nav h1{
         position: relative;
-        right: 190px;
+        right: -10px;
     }
     #bar{
         position: relative;
@@ -829,7 +829,7 @@ header nav label{
             display: none;
         }
         .hero nav{
-            width: 380px;
+            width: 292px;
             position: relative;
             right: 30px;
             bottom: 25px;
