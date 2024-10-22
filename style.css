@@ -885,4 +885,18 @@ header nav label{
     position: relative;
     left: 20px;
   }
+  header .btn01{
+    padding: 10px;
+    left: 20px;
+    bottom: 50px;
+    margin-right: auto;
+  }
+   header .btn02{
+    padding: 2px;
+    left: 20px;  
+  }
+  .block{
+    display: flex;
+    flex-direction: column;
+  }
 }
