@@ -792,15 +792,22 @@ header nav label{
         
     }
     .block h1{
-        margin-left: 100px;
-        font-size: 29px;
+        margin-left: 104px;
+        font-size: 41px;
+        color: #fd7701;
 
     }
     .block h2{
-         margin-left: 100px;
+         margin-left: -27px;
          font-size: 10px;
          position: absolute;
+         display: none;
+         
         
+    }
+    .block p{
+        margin-left: 65px;
+        margin-bottom: -17px;
     }
     .block .bn{
         position: absolute;
@@ -809,7 +816,7 @@ header nav label{
     }
   .hero nav ul{
     position: relative;
-    right: 10   0px;
+    right: 100px;
     
   }
      .hero nav  ul a{
